@@ -1,12 +1,16 @@
-###Amazon-Clone with React JS
-##E-Commerce solution
-#Firebase
+# Amazon-Clone with React JS
 
-    Authentication
-    Database
-    Functions
-    Hosting
+## E-Commerce solution
 
-#HTML
-#CSS
-#React Context API
+### Firebase
+
+- Authentication
+- Database
+- Functions
+- Hosting
+
+### HTML
+
+### CSS
+
+### React Context API
