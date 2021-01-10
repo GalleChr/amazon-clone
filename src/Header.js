@@ -12,6 +12,10 @@ function Header() {
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
+
+      dispatch({
+        type: "EMPTY_BASKET",
+      });
     }
   };
 
@@ -41,10 +45,12 @@ function Header() {
           </div>
         </Link>
 
-        <div className="header_option">
-          <span className="header_optionLineOne">Return</span>
-          <span className="header_optionLineTwo">& Orders</span>
-        </div>
+        <Link to="/orders">
+          <div className="header_option">
+            <span className="header_optionLineOne">Return</span>
+            <span className="header_optionLineTwo">& Orders</span>
+          </div>
+        </Link>
 
         <div className="header_option">
           <span className="header_optionLineOne">Your</span>
