@@ -1,7 +1,7 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const { response } = require("express");
+// const {response} = require("express");
 const stripe = require("stripe")(
   "sk_test_51I7nqfI28w4Xl8cch1iOiVMcLXazVfLo9x5dt5wDGDKhkpufbBunExxHM2fjgj7aUhidtaWOHfX1lSwQqPWiL5Bm00DJwHBXxC"
 );
@@ -28,6 +28,7 @@ app.post("/payments/create", async (request, response) => {
     currency: "usd",
   });
 
+  // OK - Created
   response.status(201).send({
     clientSecret: paymentIntent.client_secret,
   });
@@ -35,3 +36,6 @@ app.post("/payments/create", async (request, response) => {
 
 // Listen command
 exports.api = functions.https.onRequest(app);
+
+//Example endpoint
+// http://localhost:5001/clone-ea5b2/us-central1/api

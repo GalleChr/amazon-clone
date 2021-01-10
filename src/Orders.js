@@ -25,7 +25,7 @@ function Orders() {
     } else {
       setOrders([]);
     }
-  }, []);
+  }, [user]);
 
   return (
     <div className="orders">
